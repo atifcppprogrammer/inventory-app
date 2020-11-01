@@ -1,0 +1,13 @@
+{{#each genres}}
+  <div class = "genre-container">
+    <div class = "content-container" align = "center">
+      <h2>{{this.name}}</h2>
+      <img src = "{{this.poster}}" alt = "poster.png">
+    </div>
+    <div class = "action-container" align = "center">
+      <button class = "app-button"> <img src = "/images/view.svg"> </button>
+      <button class = "app-button"> <img src = "/images/delete.svg"> </button>
+      <button class = "app-button"> <img src = "/images/update.svg"> </button>
+    </div>
+  </div>
+{{/each}}

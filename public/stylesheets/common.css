@@ -1,0 +1,76 @@
+@keyframes emphasis-container {
+  from { 
+    background-color:#141414;
+    transform:scale(1);
+  }
+  to {
+    background-color:#101010;
+    transform:scale(1.02);
+  }
+}
+
+div.page-container > div:hover {
+ animation:emphasis-container 0.4s 0s linear forwards;
+}
+
+div.page-container{
+  margin-top:10px;
+  margin-bottom:30px;
+}
+
+div.button-container > button > img {
+  margin-top:1px;
+  height:auto;
+  width:90%;
+}
+
+div.button-container > button{
+  background-color:#a52a2a;
+  border-radius:50%;
+  border:none;
+  padding:7px;
+  margin:12px;
+  height:auto;
+  width:40%;
+}
+
+footer > * {
+  padding-right:25px;
+  float:right;
+}
+
+header > * {
+  padding-left:25px;
+  display:inline-block;
+  width:50%;
+}
+
+header, footer{
+ background-color:#101010;
+ padding-bottom:1px;
+ padding-top:1px;
+ width:100%;
+}
+
+header{
+  display:grid;
+  grid-template-columns:90% 10%;
+}
+
+footer{
+  position:fixed;
+  bottom:0;
+}
+
+a{
+  text-decoration:none;
+  color:#ebebeb;
+}
+
+body{
+  background-color:#1c1c1c;
+  color:#ebebeb;
+  font-family:Ubuntu;
+  font-size:10px;
+  margin:0px;
+}

@@ -1,0 +1,21 @@
+{{#each animes}}
+  <div class = "anime-container">
+    <div class = "poster-container">
+      <img src = "{{this.poster}}" alt = "poster.jpg">
+    </div>
+    <div class = "other-container">
+      <div class = "content-container" align = "justify">
+	<h2>{{this.name}}</h2>
+	<p>{{this.description}}</p>
+	<h3>
+	  <strong>Price</strong>  {{this.price}} Rs. &nbsp;|&nbsp;
+	  <strong>Stock</strong>  {{this.stock}}
+	</h3>
+      </div>
+      <div class = "action-container">
+	<button class = "app-button"> <img src = "/images/delete.svg"> </button>
+	<button class = "app-button"> <img src = "/images/update.svg"> </button>
+      </div>
+    </div>
+  </div>
+{{/each}}

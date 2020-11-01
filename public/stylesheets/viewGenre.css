@@ -1,0 +1,47 @@
+div.content-container > h3 {
+  float:right;
+}
+div.action-container > button > img {
+  width:80%;
+}
+
+div.action-container > button {
+  background-color:#a52a2a;
+  border-radius:50%;
+  border:none;
+  padding:5px;
+  margin:5px;
+  width:7%;
+}
+
+div.poster-container > img{
+  width:100%;
+  height:auto;
+}
+
+div.poster-container{
+  margin:10px;
+  flex:1;
+}
+
+div.other-container{
+  margin:10px;
+  flex:2;
+}
+
+div.anime-container{
+  box-shadow:5px 5px 5px #000;
+  background-color:#141414;
+  border-radius:10px;
+  display:flex;
+  padding:10px;
+  margin:10px;
+  width:90%;
+}
+
+div.page-container{
+  grid-template-columns: 50% auto;
+  justify-items:center;
+  display:grid;
+}
+

@@ -1,0 +1,14 @@
+<h1> Are you sure you want to {{message}} ? </h1>
+<form>
+  <input type = "text" value = "{{anime.name}}"   placeholder = "Enter anime name" required> <br>
+  <input type = "type" value = "{{anime.poster}}" placeholder = "Enter poster URL" required> <br>
+  <textarea type = "text" placeholder = "Enter description Here" required>{{anime.description}}</textarea> <br>
+  <select required id = "genre">
+    {{#each options}} <option value = "{{this.name}}">{{this.name}}</option> {{/each}}
+  </select>
+  <input type = "type" value = "{{anime.price}}" placeholder = "Enter Price" required id = "price">
+  <input type = "type" value = "{{anime.stock}}" placeholder = "Enter Stock Count" required id = "stock">
+  <br>
+  <input  type = "type" placeholder = "Enter Administrator Password" required> <br>
+  <button class = "app-button" type = "submit"> <img src = "/images/submit.svg" alt = "submit"> </button>
+</form>
