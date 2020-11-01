@@ -1,6 +1,6 @@
 const mongoClient = require('mongodb').MongoClient;
 
-const connectionString = 'mongodb://localhost:27017' || process.env.mongoConnectionString;
+const connectionString = process.env.mongoConnectionString || 'mongodb://localhost:27017';
 
 const animesCollectionName = 'animes';
 const genresCollectionName = 'genres';
