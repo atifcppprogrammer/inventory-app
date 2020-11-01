@@ -7,7 +7,7 @@ const messages = {
   'requestSuccessful':'Request completed successfully !!!'
 }
 
-const password = "atifcppprogrammer" || process.env.administratorPassword;
+const password = process.env.administratorPassword || 'atifcppprogrammer';
 const successful = messages.requestSuccessful;
 
 const prepareResponse = (status, data, message = successful, error = null) => {
